@@ -68,7 +68,7 @@ export default function CheckoutForm({ dpmCheckerLink, groupId }) {
   const handleClosePopup = () => {
     setShowPopup(false);
     // Redirect the user after closing the pop-up
-    window.location.href = "http://localhost:3000/analytics/group";
+    window.location.href = `http://localhost:3000/analytics/group?group_id=${groupId}`;
   };
 
   const paymentElementOptions = {

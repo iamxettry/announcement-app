@@ -77,7 +77,7 @@ const AnnouncementList = ({ group_id })=>{
                                 <td className="py-4">
                                 <div className="flex gap-x-4 w-fit">
                                     <div title="View" className="relative">
-                                    <Link href={`/announcement/${undefined}?ann_id=${announcement.id}`}>
+                                    <Link href={`/announcements/${announcement.title.toLowerCase().replace(/\s+/g, "-")}?ann_id=${announcement.id}`}>
                                         <Eye />
                                     </Link>
                                     </div>
